@@ -1,0 +1,32 @@
+{
+  "name": "@acme/graphql",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "generate": "graphql-codegen --config codegen.yaml",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "@acme/tsconfig": "workspace:*",
+    "@graphql-codegen/cli": "^2.7.0",
+    "@graphql-codegen/near-operation-file-preset": "^2.2.15",
+    "@graphql-codegen/typescript": "^2.6.0",
+    "@graphql-codegen/typescript-operations": "^2.4.3",
+    "@graphql-codegen/typescript-rtk-query": "^2.2.15",
+    "eslint-config-acme": "workspace:*"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.3",
+    "@rtk-query/graphql-request-base-query": "^2.1.0",
+    "graphql": "^16.5.0",
+    "graphql-request": "^4.3.0"
+  }
+}
