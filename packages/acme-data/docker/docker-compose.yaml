@@ -168,7 +168,7 @@ services:
     image: hasura/graphql-engine:v2.8.4
     #image: hasura/graphql-engine:v2.8.4.cli-migrations-v3
     ports:
-      - "8090:8080"
+      - "8010:8080"
     depends_on:
       - db
     restart: unless-stopped
