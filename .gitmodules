@@ -1,3 +1,0 @@
-[submodule "packages/supabase/src"]
-	path = packages/supabase/src
-	url = https://github.com/supabase/supabase.git
