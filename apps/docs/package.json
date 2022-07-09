@@ -1,0 +1,21 @@
+{
+  "name": "@acme/docs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "start": "next start ",
+    "dev": "next dev -p 3002",
+    "lint": "TIMING=1 next lint",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .next"
+  },
+  "dependencies": {
+    "@acme/core": "workspace:*",
+    "@acme/utils": "workspace:*",
+    "next": "^12.0.8"
+  },
+  "devDependencies": {
+    "@acme/tsconfig": "workspace:*",
+    "eslint-config-acme": "workspace:*"
+  }
+}
