@@ -6,7 +6,7 @@
    1. [PNPM](https://pnpm.io/installation)
 2. [Docker](https://docs.docker.com/get-docker/)
    1. Settings > Enable Kubernetes
-3. [Skaffold](https://skaffold.dev/)
+3. [Tilt](https://docs.tilt.dev/install.html)
 
 <br />
 
@@ -41,10 +41,7 @@
       1) Efficient image builds: [Nixpacks](https://nixpacks.com/docs/getting-started)
       2) Will attempt to have a `docker-compose` fallback for when k8s isn't wanted
    3) [Kubernetes](https://kubernetes.io/)
-      1) Dev/Deploy: [Skaffold](https://skaffold.dev/) __may replace; need to research whats best__
-         1) [Skaffold/Tilt/DevSpace](https://loft.sh/blog/skaffold-vs-tilt-vs-devspace/)
-         2) [Tilt](https://tilt.dev/)
-         3) [Garden](https://garden.io/)
+      1) Dev/Deploy: [Tilt](https://tilt.dev/)
 
 <hr />
 
