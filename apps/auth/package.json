@@ -12,6 +12,7 @@
     "next": "^12.0.8"
   },
   "devDependencies": {
-    "eslint-config-next": "^12.0.8"
+    "eslint-config-next": "^12.0.8",
+    "sass": "^1.53.0"
   }
 }

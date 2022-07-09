@@ -26,6 +26,12 @@
     "dev": {
       "cache": false
     },
+    "docker:compose:up": {
+      "cache": false
+    },
+    "docker:compose:destroy": {
+      "cache": false
+    },
     "clean": {
       "cache": false
     }
