@@ -15,8 +15,8 @@ const client = new GraphQLClient(url, {
 });
 
 /**
- * TODO: this any is to only getting it to build
- * TODO: look into what is needed to lose the any
+ * * TODO: this any is to only getting it to build
+ * * TODO: look into what is needed to lose the any
  */
 
 export const api: any = createApi({
