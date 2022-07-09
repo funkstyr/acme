@@ -4,7 +4,7 @@
     "license": "MIT",
     "scripts": {
       "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-      "docker:compose:up": "docker-compose --env-file .env.example -f docker/docker-compose.yaml up",
-      "docker:compose:destroy": "docker-compose -f docker/docker-compose.yaml down -v --remove-orphans"
+      "docker:compose:up": "docker-compose --env-file .env.example -f infra/docker/docker-compose.yaml up",
+      "docker:compose:destroy": "docker-compose -f infra/docker/docker-compose.yaml down -v --remove-orphans"
     }
   }

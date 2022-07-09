@@ -1,0 +1,11 @@
+{
+    "name": "@acme/infra",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+      "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+      "dev": "pnpm tilt:up",
+      "tilt:up": "tilt up",
+      "tilt:down": "tilt down"
+    }
+  }
