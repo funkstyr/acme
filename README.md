@@ -8,8 +8,43 @@
    1. Settings > Enable Kubernetes
 3. [Skaffold](https://skaffold.dev/)
 
+<br />
 
+## Technologies
 
+1) Front End (Node)
+   1) [React](https://beta.reactjs.org/)
+      1) [Next.js](https://nextjs.org/)
+      2) [Mantine UI](https://mantine.dev/)
+         1) Easily add sass via `pnpm add sass`
+         2) Would do tailwind if only a static content site: [tailwindcss](https://tailwindcss.com/)/[daisyUI](https://daisyui.com/)
+         3) [React Icons](https://react-icons.github.io/react-icons/)
+         4) [zod](https://zod.dev/)
+      3) [Redux Toolkit](https://redux-toolkit.js.org/)
+         1) mainly for RTK-Query hooks
+         2) Api hooks auto gen: [graphql codegen](https://redux-toolkit.js.org/rtk-query/usage/code-generation#graphql)
+         3) [next-redux-wrapper](https://github.com/kirill-konshin/next-redux-wrapper)
+      4) [next-auth](https://next-auth.js.org/)
+      5) [next-translate](https://github.com/vinissimus/next-translate)
+      6) [next-seo](https://github.com/garmeeh/next-seo)
+      7) [next-pwa](https://github.com/shadowwalker/next-pwa)
+      8) [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+         1) [Cypress](https://www.cypress.io/)
+2) Back End
+   1) [Hasura](https://hasura.io/)
+   2) [Supabase](https://supabase.com/)
+   3) [Postgres](https://www.postgresql.org/)
+   4) [RabbitMQ](https://www.rabbitmq.com/)
+3) Infra
+   1) [Turborepo](https://turborepo.org/) - monorepo
+   2) [Docker](https://docs.docker.com/)
+      1) Efficient image builds: [Nixpacks](https://nixpacks.com/docs/getting-started)
+      2) Will attempt to have a `docker-compose` fallback for when k8s isn't wanted
+   3) [Kubernetes](https://kubernetes.io/)
+      1) Dev/Deploy: [Skaffold](https://skaffold.dev/) __may replace; need to research whats best__
+         1) [Skaffold/Tilt/DevSpace](https://loft.sh/blog/skaffold-vs-tilt-vs-devspace/)
+         2) [Tilt](https://tilt.dev/)
+         3) [Garden](https://garden.io/)
 
 <hr />
 
