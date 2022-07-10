@@ -14,6 +14,12 @@
         "^build"
       ]
     },
+    "generate": {
+      "outputs": [
+        "src/**/*.generated.ts",
+        "src/types/generated.ts"
+      ]
+    },
     "test": {
       "outputs": [
         "coverage/**"
@@ -26,12 +32,7 @@
     "dev": {
       "cache": false
     },
-    "docker:compose:up": {
-      "cache": false
-    },
-    "docker:compose:destroy": {
-      "cache": false
-    },
+
     "clean": {
       "cache": false
     }

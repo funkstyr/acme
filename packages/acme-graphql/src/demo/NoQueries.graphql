@@ -1,0 +1,3 @@
+query NoQueries {
+  no_queries_available
+}

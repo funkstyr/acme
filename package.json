@@ -14,8 +14,7 @@
     "version-packages": "changeset version",
     "release": "turbo run build --filter=docs^... && changeset publish",
     "up-deps": "pnpm update -i",
-    "docker:compose:up": "turbo run docker:compose:up --no-cache --parallel --continue",
-    "docker:compose:destroy": "turbo run docker:compose:destroy --no-cache --parallel --continue"
+    "generate": "turbo run generate"
   },
   "devDependencies": {
     "@changesets/cli": "^2.23.1",
