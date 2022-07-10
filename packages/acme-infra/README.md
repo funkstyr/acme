@@ -1,5 +1,5 @@
-# ACME Database
+# ACME Infrastructure
 
-We are using a combo of supabase + hasura with docker-compose to get everything working together
+We plan to utilize Kubernetes alongside `Tilt` for container orchestration.
 
-> Copy .env.example to .env
+We will include `docker-compose` files as well as a backup instead of running k8s.
