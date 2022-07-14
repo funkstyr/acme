@@ -8,13 +8,18 @@ schema:
 documents: "src/**/*.graphql"
 
 generates:
-  src/types/generated.ts:
+  src/types/graphql.ts:
     plugins:
       - "typescript"
+
+  src/types/validation.ts:
+    plugins:
       - typescript-validation-schema
     config:
       strictScalars: true
       schema: zod
+      importFrom: types/graphql # path for generated ts code
+      typesSuffix: ValidationSchema
 
   src:
     preset: near-operation-file
