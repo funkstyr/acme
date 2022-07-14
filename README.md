@@ -12,25 +12,26 @@
 
 ## Technologies
 
-1) Front End (Node)
+1) Front End/Node
    1) [React](https://beta.reactjs.org/)
-      1) [Next.js](https://nextjs.org/)
-      2) [Mantine UI](https://mantine.dev/)
+      1) [tRPC](https://trpc.io/docs/)
+      2) [Next.js](https://nextjs.org/)
+      3) [Mantine UI](https://mantine.dev/)
          1) Easily add sass via `pnpm add sass`
          2) Would do tailwind if only a static content site: [tailwindcss](https://tailwindcss.com/)/[daisyUI](https://daisyui.com/)
          3) [React Icons](https://react-icons.github.io/react-icons/)
          4) [zod](https://zod.dev/)
-      3) [Redux Toolkit](https://redux-toolkit.js.org/)
+      4) [Redux Toolkit](https://redux-toolkit.js.org/)
          1) mainly for RTK-Query hooks
          2) Api hooks auto gen: [graphql codegen](https://redux-toolkit.js.org/rtk-query/usage/code-generation#graphql)
          3) [next-redux-wrapper](https://github.com/kirill-konshin/next-redux-wrapper)
-      4) [next-auth](https://next-auth.js.org/)
-      5) [next-translate](https://github.com/vinissimus/next-translate)
-      6) [next-seo](https://github.com/garmeeh/next-seo)
-      7) [next-pwa](https://github.com/shadowwalker/next-pwa)
-      8) [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+      5) [next-auth](https://next-auth.js.org/)
+      6) [next-translate](https://github.com/vinissimus/next-translate)
+      7) [next-seo](https://github.com/garmeeh/next-seo)
+      8) [next-pwa](https://github.com/shadowwalker/next-pwa)
+      9) [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
          1) [Cypress](https://www.cypress.io/)
-2) Back End
+2) Data
    1) [Hasura](https://hasura.io/)
    2) [Supabase](https://supabase.com/)
    3) [Postgres](https://www.postgresql.org/)
@@ -55,8 +56,17 @@ This Turborepo includes the following:
 
 ### Apps and Packages
 
+- `admin`: admin ui for managing content, users, and other toggles - 🚧
+- `auth`: authorization forms - signup, login, reset password, account mgt - 🏗️
+- `cards`: card game - rooms, chat, playing - 🕵️
+- `commerce`: e-commerce ui - catalog, product, basket/cart, checkout- 🚧
+- `landing`: public landing page(as static as possible) for marketing content - 🚧
 - `docs`: A placeholder documentation site powered by [Next.js](https://nextjs.org)
 - `@acme/core`: core React components
+- `@acme/data`: database: hasura + supabase + postgres - 🏗️
+- `@acme/graphql`: auto generated graphql endpoints + schema + validation - 🏗️
+  - > currently utilizing graphql-codegen + rtk-query
+- `@acme/infra`: container orchestration - docker-compose + k8s w/ tilt - 🏗️
 - `@acme/utils`: shared React utilities
 - `@acme/tsconfig`: shared `tsconfig.json`s used throughout the monorepo
 - `eslint-preset-acme`: ESLint preset
@@ -89,6 +99,7 @@ git init . && git add . && git commit -m "Init"
 - `yarn lint` - Lint all packages
 - `yarn changeset` - Generate a changeset
 - `yarn clean` - Clean up all `node_modules` and `dist` folders (runs each package's clean script)
+- `yarn generate` - Create generated files
 
 ### Changing the npm organization scope
 
