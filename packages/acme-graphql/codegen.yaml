@@ -11,6 +11,10 @@ generates:
   src/types/generated.ts:
     plugins:
       - "typescript"
+      - typescript-validation-schema
+    config:
+      strictScalars: true
+      schema: zod
 
   src:
     preset: near-operation-file

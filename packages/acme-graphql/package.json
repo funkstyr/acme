@@ -21,7 +21,8 @@
     "@graphql-codegen/typescript": "^2.6.0",
     "@graphql-codegen/typescript-operations": "^2.4.3",
     "@graphql-codegen/typescript-rtk-query": "^2.2.15",
-    "eslint-config-acme": "workspace:*"
+    "eslint-config-acme": "workspace:*",
+    "graphql-codegen-typescript-validation-schema": "^0.5.0"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
