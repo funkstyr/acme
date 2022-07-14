@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@acme/graphql": "workspace:*",
     "@trpc/client": "^9.25.3",
     "@trpc/next": "^9.25.3",
     "@trpc/react": "^9.25.3",

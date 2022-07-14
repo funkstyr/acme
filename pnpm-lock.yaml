@@ -34,6 +34,7 @@ importers:
 
   apps/auth:
     specifiers:
+      '@acme/graphql': workspace:*
       '@trpc/client': ^9.25.3
       '@trpc/next': ^9.25.3
       '@trpc/react': ^9.25.3
@@ -43,6 +44,7 @@ importers:
       sass: ^1.53.0
       zod: ^3.17.3
     dependencies:
+      '@acme/graphql': link:../../packages/acme-graphql
       '@trpc/client': 9.25.3_@trpc+server@9.25.3
       '@trpc/next': 9.25.3_gjz2vgkn3qadfgugkh65jdpnzq
       '@trpc/react': 9.25.3_ms3at4dqhndwrpx5xroirjehyy
@@ -76,6 +78,9 @@ importers:
       '@acme/tsconfig': link:../acme-tsconfig
       eslint-config-acme: link:../eslint-config-acme
 
+  packages/acme-data:
+    specifiers: {}
+
   packages/acme-graphql:
     specifiers:
       '@acme/tsconfig': workspace:*
@@ -104,6 +109,9 @@ importers:
       '@graphql-codegen/typescript-rtk-query': 2.3.1_ab2atgw2oi2t52kjmdkimhsgra
       eslint-config-acme: link:../eslint-config-acme
       graphql-codegen-typescript-validation-schema: 0.5.0
+
+  packages/acme-infra:
+    specifiers: {}
 
   packages/acme-tsconfig:
     specifiers: {}

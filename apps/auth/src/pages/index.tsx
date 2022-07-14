@@ -4,7 +4,13 @@ import Image from "next/image";
 
 import styles from "styles/Home.module.css";
 
+import { trpc } from "features/app/hooks/trpc";
+
 const Home: NextPage = () => {
+  const { data } = trpc.useQuery(["health"]);
+
+  console.log("data", data);
+
   return (
     <div className={styles.container}>
       <Head>
