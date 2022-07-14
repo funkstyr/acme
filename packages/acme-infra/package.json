@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "license": "MIT",
     "scripts": {
-      "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+      "clean": "rm -rf .turbo && docker image prune -f --all && docker system prune -f --volumes",
       "dev": "pnpm tilt:up",
       "tilt:up": "tilt up",
       "tilt:down": "tilt down"

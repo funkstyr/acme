@@ -1,5 +1,3 @@
-# -*- mode: Python -*-
-
 # version_settings() enforces a minimum Tilt version
 # https://docs.tilt.dev/api.html#api.version_settings
 version_settings(constraint='>=0.30.4')
@@ -9,5 +7,5 @@ version_settings(constraint='>=0.30.4')
 docker_compose(
     ["../acme-data/infra/docker/docker-compose.yaml"],
     "../acme-data/.env.example",
-    "data"
+    "acme-data"
 )
